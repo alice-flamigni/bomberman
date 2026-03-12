@@ -5,6 +5,7 @@
 #include "Premio.h"
 #include <cstdlib>
 #include <ctime>
+#include <ncurses.h>
 
 Premio::Premio(int startX, int startY) {
     x = startX;
@@ -51,6 +52,18 @@ int Premio::getX() {
 int Premio::getY() {
     return y;
 }
+
+void Premio::disegnaPremio() {
+
+    if (!nascosto && !raccolto) { // se il premio non è stato raccolto e il muro
+        mvprintw(y,x, "!"); // sotto cui stava è stato rotto, stampo un "!" per indicare il premio
+    }
+}
+
+void Premio::cancella() {
+    mvprintw(y,x," "); // cancello il premio stampando uno spazio al suo posto
+}
+
 
 
 

@@ -31,6 +31,9 @@ public:
 
     int getX(); // da la coordinata x del premio
     int getY(); // da la coordinata y del premio
+
+    void disegnaPremio(); //creo premio con "!"
+    void cancella(); // dopo che l'ho raccolto, devo cancellarlo
 };
 
 // mancano: togliere l'item una volta raccolto; dire di aumentare il raggio di 1 in tutte e 4 le direzioni
