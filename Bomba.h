@@ -29,6 +29,9 @@ public:
     int getRaggio(); // fa sapere in quante caselle esplode la bomba
     bool isEsplosa(); // finche la bomba non esplode il tempo va avanti (partito nel momento
                     // in cui l'ho piazzata). se passano 3 secondi is_esplosa diventa true
+    void disegnaBomba(); // creo la grafica della bomba (stampo un "*" per la bomba)
+    void disegnaEsplosione(); // creo la grafica per l'esplosione ("*" in 4 direzioni)
+    void cancella(); // elimino la bomba dopo che è esplosa
 
 };
 // mancano: conseguenze su muri e personaggi; quando una bomba esplode deve essere tolta; devo capire come fare
