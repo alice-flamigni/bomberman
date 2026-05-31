@@ -103,6 +103,15 @@ build CMakeFiles/prova_progetto.dir/griglia.cpp.o: CXX_COMPILER__prova_progetto_
   OBJECT_FILE_DIR = CMakeFiles/prova_progetto.dir
   TARGET_SUPPORT_DIR = CMakeFiles/prova_progetto.dir
 
+build CMakeFiles/prova_progetto.dir/tuttoUnitoMioValeAndrea.cpp.o: CXX_COMPILER__prova_progetto_unscanned_Debug /Users/aliceflamigni/CLionProjects/prova_progetto/tuttoUnitoMioValeAndrea.cpp || cmake_object_order_depends_target_prova_progetto
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles/prova_progetto.dir/tuttoUnitoMioValeAndrea.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fcolor-diagnostics
+  INCLUDES = -I/opt/homebrew/opt/ncurses/include
+  OBJECT_DIR = CMakeFiles/prova_progetto.dir
+  OBJECT_FILE_DIR = CMakeFiles/prova_progetto.dir
+  TARGET_SUPPORT_DIR = CMakeFiles/prova_progetto.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target prova_progetto
@@ -111,7 +120,7 @@ build CMakeFiles/prova_progetto.dir/griglia.cpp.o: CXX_COMPILER__prova_progetto_
 #############################################
 # Link the executable prova_progetto
 
-build prova_progetto: CXX_EXECUTABLE_LINKER__prova_progetto_Debug CMakeFiles/prova_progetto.dir/main.cpp.o CMakeFiles/prova_progetto.dir/GameStatus.cpp.o CMakeFiles/prova_progetto.dir/Tempo.cpp.o CMakeFiles/prova_progetto.dir/Bomba.cpp.o CMakeFiles/prova_progetto.dir/Premio.cpp.o CMakeFiles/prova_progetto.dir/griglia.cpp.o | /opt/homebrew/opt/ncurses/lib/libcurses.dylib /opt/homebrew/opt/ncurses/lib/libform.dylib
+build prova_progetto: CXX_EXECUTABLE_LINKER__prova_progetto_Debug CMakeFiles/prova_progetto.dir/main.cpp.o CMakeFiles/prova_progetto.dir/GameStatus.cpp.o CMakeFiles/prova_progetto.dir/Tempo.cpp.o CMakeFiles/prova_progetto.dir/Bomba.cpp.o CMakeFiles/prova_progetto.dir/Premio.cpp.o CMakeFiles/prova_progetto.dir/griglia.cpp.o CMakeFiles/prova_progetto.dir/tuttoUnitoMioValeAndrea.cpp.o | /opt/homebrew/opt/ncurses/lib/libcurses.dylib /opt/homebrew/opt/ncurses/lib/libform.dylib
   CONFIG = Debug
   FLAGS = -g
   LINK_FLAGS = -Wl,-search_paths_first -Wl,-headerpad_max_install_names

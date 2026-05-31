@@ -1,10 +1,9 @@
 //
 // Created by alice flamigni on 08/03/26.
-//
 
 //OGNI VOLTA CHE C'E 20,40 ANDRÀ CAMBIATO CON RIGHE,COLONNE
 
-#include "Bomba.h"
+#include "Bomba.hpp"
 #include "griglia.cpp"
 #include <cstdlib>
 #include <ncurses.h>
@@ -120,7 +119,7 @@ void Bomba::esplodiMuri(char mappa[20][40]) { // funzione che modifica graficame
             }
         }
         // GIÙ
-        for(int i = 1; i <= raggioScoppio - 1; i++) { // ho fatto in modo che il raggio verticale sia piu corto di quello orizzontale
+        for(int i = 1; i <= raggioScoppio; i++) { // ho fatto in modo che il raggio verticale sia piu corto di quello orizzontale
             if(y + i < 20) {
                 if(mappa[y + i][x] == muro) break;
                 raggioGiu = i; // SALVIAMO LA DISTANZA
@@ -128,7 +127,7 @@ void Bomba::esplodiMuri(char mappa[20][40]) { // funzione che modifica graficame
             }
         }
         // SU
-        for(int i = 1; i <= raggioScoppio - 1; i++) { // ho fatto in modo che il raggio verticale sia piu corto di quello orizzontale
+        for(int i = 1; i <= raggioScoppio; i++) { // ho fatto in modo che il raggio verticale sia piu corto di quello orizzontale
             if(y - i >= 0) {
                 if(mappa[y - i][x] == muro) break;
                 raggioSu = i; // SALVIAMO LA DISTANZA
@@ -178,3 +177,5 @@ void Bomba::disegnaEsplosione(WINDOW* win) { // una volta scoppiata la bomba (3 
         }
     }
 } */
+
+//QUANDO AVRÒ LE CLASSI ANCHE DEGLI ALTRI DOVRÒ CAMBIARE I NUMERI 20X40 IN RIGHEXCOLONNE

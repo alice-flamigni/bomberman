@@ -8,16 +8,18 @@ find_package(Curses REQUIRED)
 include_directories(${CURSES_INCLUDE_DIR})
 add_executable(prova_progetto main.cpp
         GameStatus.cpp
-        Gamestatus.h
+        GameStatus.hpp
         Tempo.cpp
-        Tempo.h
+        Tempo.hpp
         GameStatus.cpp
-        GameStatus.h
+        GameStatus.hpp
         Bomba.cpp
-        Bomba.h
+        Bomba.hpp
         Premio.cpp
-        Premio.h
-        griglia.cpp)
+        Premio.hpp
+        griglia.cpp
+        tuttoUnitoMioValeAndrea.cpp
+)
 target_link_libraries(prova_progetto ncurses)
 target_link_libraries(prova_progetto ${CURSES_LIBRARIES})
 

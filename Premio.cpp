@@ -2,7 +2,7 @@
 // Created by alice flamigni on 08/03/26.
 //
 
-#include "Premio.h"
+#include "Premio.hpp"
 #include <chrono>
 #include <ncurses.h>
 
@@ -63,16 +63,13 @@ void Premio::disegnaPremio(WINDOW* win) { // funzione void che disegna il premio
         //in base a quella disegna il premio corretto -> grazie al tipo ENUM il nome del premio è assegnato ad un numero che il programma
         // legge cosi da poter disegnare il premio giusto. analizza la variabile di tipo intero "tipo", che puo essere i diversi tipi di premio;
         //in base a quella disegna il premio corretto
-        if (tipo == AUMENTA_RAGGIO) {
+        if (tipo == AUMENTA_RAGGIO)
             mvwprintw(win, y, x, "r");
-        } else if (tipo == IMMUNITA) {
-            mvwprintw(win, y, x, "$");
-        } else if (tipo == DIMINUISCI_VELOCITA) {
-            mvwprintw(win, y, x, "-");
-        }
-        else if (tipo == POSIZIONA_PIU_BOMBE) {
-            mvwprintw(win, y,x,"+");
-        }
+        else if (tipo == IMMUNITA) mvwprintw(win, y, x, "$");
+
+        else if (tipo == DIMINUISCI_VELOCITA) mvwprintw(win, y, x, "-");
+
+        else if (tipo == POSIZIONA_PIU_BOMBE) mvwprintw(win, y,x,"+");
     }
 }
 

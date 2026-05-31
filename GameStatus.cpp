@@ -2,7 +2,7 @@
 // Created by alice flamigni on 04/03/26.
 //
 
-#include "GameStatus.h"
+#include "GameStatus.hpp"
 #include <ncurses.h>
 
 GameStatus::GameStatus() { // costruttore che inizializza vite a 5 e punti a 0
